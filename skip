@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git cherry-pick --skip
+
+/home/ali/Desktop/./tm

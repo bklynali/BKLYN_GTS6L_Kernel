@@ -1,0 +1,31 @@
+#!/bin/bash -x
+clear
+
+# Color
+ON_BLUE=`echo -e "\033[44m"`	# On Blue
+RED=`echo -e "\033[1;31m"`	# Red
+BLUE=`echo -e "\033[1;34m"`	# Blue
+GREEN=`echo -e "\033[1;32m"`	# Green
+Under_Line=`echo -e "\e[4m"`	# Text Under Line
+STD=`echo -e "\033[0m"`		# Text Clear
+
+# Bold High Intensty
+BIBlack=`echo -e "\033[1;90m"`      # Black
+BIRed=`echo -e "\033[1;91m"`        # Red
+BIGreen=`echo -e "\033[1;92m"`      # Green
+BIYellow=`echo -e "\033[1;93m"`     # Yellow
+BIBlue=`echo -e "\033[1;94m"`       # Blue
+BIPurple=`echo -e "\033[1;95m"`     # Purple
+BICyan=`echo -e "\033[1;96m"`       # Cyan
+BIWhite=`echo -e "\033[1;97m"`      # White
+
+clear
+
+echo ${BIYellow}
+
+rm -rf out*
+sleep 2
+make mrproper
+
+pause
+
